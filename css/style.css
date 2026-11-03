@@ -1,22 +1,24 @@
 /* Styles for Mobile Site */
 
 body {
-    background-color:gray;
+    background-color:#662700;
+    
 }
 
 /* Head & Hero */
 header,main,footer {
-    background-color:white;
+    background-color:#566700;
     padding:1rem;
     box-shadow:10px 10px 10px rgba(0,0,0,.5);
     margin-bottom:2rem;
-    border:5px solid #ddd;
+    border:5px solid #006466;
 }
 header {
     text-align:center;
+    
 }
 main {
-    border:5px solid #ddd;
+    border:5px solid #006466;
 }
 h1 {
     font-size:400%;
@@ -25,11 +27,13 @@ h1 {
 }
 #hero div {
     padding:4rem;
+    font-size: 2rem;
 }
 #hero img {
     max-width:80%;
-    display:block;
+    display:grid;
     margin:0px auto;
+    border: 3px solid #3f0066;
 }
 
 /* Projects */
@@ -37,21 +41,30 @@ h1 {
     display:block;
     max-width:50%;
     margin:0px auto;
+    border: 3px solid #3f0066;
 }
 #projects h2 {
     text-align:center;
     font-size:200%; 
+    color: #3f0066;
+}
+
+#projects {
+    border: 5px solid #3f0066;
+    padding: 10px;
+    background-color: #662700;
+    color: #a6bb3e;
 }
 
 /* Reviews */
 #reviews .review {
     display:flex;
     flex-direction: column;
-    border:3px solid #ddd;
+    border:3px solid #006466;
     border-radius:1rem;
     padding:2rem;
     margin-bottom:1rem;
-    background-color:#eee;
+    background-color:#a6bb3e;
 }
 .review .content {
     flex-grow:4;
@@ -82,7 +95,7 @@ footer {
         padding:2rem;
     }
     header,main,footer {
-        background-color:white;
+        background-color:#566700;
         padding:2.5rem 5rem;
         box-shadow:10px 10px 10px rgba(0,0,0,.5);
         margin-bottom:2rem;
@@ -91,23 +104,34 @@ footer {
     /* Head & Hero */
     #hero {
         display:flex;
+        flex-direction: column ;
         justify-content: center;
         align-items:center;
+        font-size: 2rem;
+
     }
     #hero img {
-        max-width:20%;
+        max-width:80%;
+        border: 3px solid #3f0066;
+        border-radius: 50%;
+        
     }
 
     /* Projects */
     .project {
         display:flex;
         margin-bottom:3rem;
+        align-items: center;
+        justify-content: flex-start;
+       
     }
     .project div {
         padding:2rem;
+        flex: 1;
     }
     #projects img { 
         max-width:20%;
+        border: 3px solid #3f0066;
     }
 
     /* Reviews */
@@ -119,7 +143,7 @@ footer {
     #reviews h2 {
         grid-column: 1/-1;
     }
-    .review * {
+    .reviews * {
         /*border:1px solid black;*/
     }
 
